@@ -72,7 +72,11 @@ h5 {
     width: 34%;
 }
 
-.last-slot,
+.last-slot {
+    float: left;
+    width: 33%;
+}
+
 .second-slot {
     float: left;
     width: 33%;
