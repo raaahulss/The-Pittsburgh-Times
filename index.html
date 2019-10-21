@@ -39,13 +39,62 @@
     <!-- Version Tech CSS for this template -->
     <link href="css/version/tech.css" rel="stylesheet">
 
+    <!-- Version Pop-up CSS for this template -->
+    <link href="css/version/pop-up.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    
+    <script type='text/javascript'>
+    $(function(){
+    var overlay = $('<div id="overlay"></div>');
+    overlay.show();
+    overlay.appendTo(document.body);
+    $('.popup').show();
+    $('.close').click(function(){
+    $('.popup').hide();
+    overlay.appendTo(document.body).remove();
+    return false;
+    });
+    $('.x').click(function(){
+    $('.popup').hide();
+    overlay.appendTo(document.body).remove();
+    return false;
+    });
+    });
+    </script>
+
 </head>
 <body>
+
+    <div class='popup'>
+        <div class='cnt223'>
+            <!-- <img src='http://www.developertips.net/demos/popup-dialog/img/x.png' alt='quit' class='x' id='x' /> -->
+            <h2>
+                <center>Privacy Policy</center>
+            </h2>
+            <p>
+                Full privacy policy/short notice/video privacy policy
+            </p>
+
+            <!-- <div class='vidContain'> -->
+                <div class='vid'>
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            <!-- </div> -->
+
+            <p>
+            <a href='' class='close'>Accept</a>
+            </p>
+        </div>
+    </div>
 
     <div id="wrapper">
         <header class="tech-header header">
@@ -80,15 +129,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_01.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/science/virgin-galactic-spacesuit.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/science01.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Science</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Top 10+ care advice for your toenails</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/science/virgin-galactic-spacesuit.html" title="">Virgin Galactic Unveils Jumpsuit for Space Tourists</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -96,15 +145,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_02.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/15/science/cbd-thc-cannabis-cannabidiol.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/science02.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Science</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">The secret of your beauty is handmade soap</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/15/science/cbd-thc-cannabis-cannabidiol.html" title="">CBD or THC? Common Drug Test Can’t Tell the Difference</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -112,15 +161,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_03.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/15/science/nasa-spacesuits.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/science03.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Science</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Benefits of face mask made from mud</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/15/science/nasa-spacesuits.html" title="">NASA’s New Spacesuits Unveiled, for Trips to the Moon and Beyond</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -128,15 +177,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_04.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/14/science/amelia-earhart-robert-ballard.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/science04.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Science</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Relax with the unique warmth of candle flavor</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/14/science/amelia-earhart-robert-ballard.html" title="">The Amelia Earhart Mystery Stays Down in the Deep</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -147,15 +196,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_05.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/interactive/2019/10/16/technology/game-developers.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/technology01.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Technology</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">2017 summer stamp will have design models here</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/interactive/2019/10/16/technology/game-developers.html" title="">Fear, Anxiety and Hope: What It Means to Be a Minority in Gaming</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -163,15 +212,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_06.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/business/-big-tech-europe-antitrust.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/technology02.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Technology</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Which color is the most suitable color for you?</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/business/-big-tech-europe-antitrust.html" title="">Europe’s Margrethe Vestager Takes a Rare Step Toward Big Tech</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -179,15 +228,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_07.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/technology/huawei-sales-growth.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/technology03.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Technology</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Subscribe to these sites to keep an eye on the fashion</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/technology/huawei-sales-growth.html" title="">Huawei Reports Stronger Sales Growth</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -195,15 +244,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_08.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/business/media/netflix-q3-earnings.html?action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Technology" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/technology04.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Technology</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">The most trends of this year with color combination</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/business/media/netflix-q3-earnings.html?action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Technology" title="">What to Expect From Netflix Earnings</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -214,15 +263,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_09.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.post-gazette.com/ae/movies/2019/10/11/Jane-Fonda-arrested-DC-during-climate-change-protest/stories/201910110164" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/politics01.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Politics</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">I visited the architects of Istanbul for you</a></h4>
+                                                                        <h4><a href="https://www.post-gazette.com/ae/movies/2019/10/11/Jane-Fonda-arrested-DC-during-climate-change-protest/stories/201910110164" title="">Jane Fonda is arrested in DC during climate change protest — exactly as she’d planned</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -230,15 +279,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_10.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/us/politics/gordon-sondland-intelligence-risk.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/politics02.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Politics</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Prepared handmade dish dish in the Netherlands</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/us/politics/gordon-sondland-intelligence-risk.html" title="">Ex-Aide Saw Gordon Sondland as a Potential National Security Risk</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -246,15 +295,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_11.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/15/us/politics/elizabeth-warren-debate.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/politics03.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Politics</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">I recommend you visit the fairy chimneys</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/15/us/politics/elizabeth-warren-debate.html" title="">Elizabeth Warren, Candidate With the Plans, Needed One for All the Incoming Attacks</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -262,15 +311,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_12.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/us/politics/democratic-debate.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/politics04.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Politics</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">One of the most beautiful ports in the world</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/us/politics/democratic-debate.html" title="">6 Takeaways From the October Democratic Debate</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -281,15 +330,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_13.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.post-gazette.com/sports/high-school-football/2019/10/11/Whipkey-brothers-spark-No-4-McGuffey-8-0-to-28-14-win-Charleroi-high-school-football-Century-Conference/stories/201910110168" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/sports01.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Sports</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">A collection of the most beautiful shop designs</a></h4>
+                                                                        <h4><a href="https://www.post-gazette.com/sports/high-school-football/2019/10/11/Whipkey-brothers-spark-No-4-McGuffey-8-0-to-28-14-win-Charleroi-high-school-football-Century-Conference/stories/201910110168" title="">Whipkey brothers spark No. 4 McGuffey (8-0) to 28-14 win</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -297,15 +346,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_14.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/15/sports/basketball/lebron-china-burned-jerseys.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/sports02.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Sports</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">America's and Canada's most beautiful wine houses</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/15/sports/basketball/lebron-china-burned-jerseys.html" title="">LeBron James Faces Backlash Unseen Since ‘The Decision’</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -313,15 +362,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_15.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/15/nyregion/shooting-dressage-social-media.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/sports03.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Sports</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">The most professional ways to color your walls</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/15/nyregion/shooting-dressage-social-media.html" title="">An Equestrian Was Shot by Her Olympic Trainer, Then Pummeled Online</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -329,15 +378,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_16.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/14/sports/soccer/england-bulgaria-racism.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/sports04.jpg" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">Sports</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Stylish cabinet designs and furnitures</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/14/sports/soccer/england-bulgaria-racism.html" title="">England’s European Championship Qualifier Marred by Racist Abuse</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -348,15 +397,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_17.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/world/middleeast/turkey-kurds-syria.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/world_news01.png" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">World News</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Grilled vegetable with fish prepared with fish</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/world/middleeast/turkey-kurds-syria.html" title="">Turkey Urges Kurdish Fighters to Lay Down Their Arms</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -364,15 +413,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_18.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/world/asia/kim-jong-un-horse.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/world_news02.png" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">World News</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">The world's finest and clean meat restaurants</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/world/asia/kim-jong-un-horse.html" title="">These Sure Are Photos of Kim Jong-un on a Horse</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -380,15 +429,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_19.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/15/world/asia/kashmir-militants.html" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/world_news03.png" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">World News</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Fried veal and vegetable dish</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/15/world/asia/kashmir-militants.html" title="">As Militants Kill in Kashmir, People Are Afraid to Go to Work</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -396,15 +445,15 @@
                                                             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                                                                 <div class="blog-box">
                                                                     <div class="post-media">
-                                                                        <a href="tech-single.html" title="">
-                                                                            <img src="upload/tech_menu_20.jpg" alt="" class="img-fluid">
+                                                                        <a href="https://www.nytimes.com/2019/10/16/world/asia/hong-kong-protests-carrie-lam.html?action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=At%20Wa" title="">
+                                                                            <img style="width:180px;height:120px;" src="news/world_news04.png" alt="" class="img-fluid">
                                                                             <div class="hovereffect">
                                                                             </div><!-- end hover -->
                                                                             <span class="menucat">World News</span>
                                                                         </a>
                                                                     </div><!-- end media -->
                                                                     <div class="blog-meta">
-                                                                        <h4><a href="tech-single.html" title="">Tasty pasta sauces and recipes</a></h4>
+                                                                        <h4><a href="https://www.nytimes.com/2019/10/16/world/asia/hong-kong-protests-carrie-lam.html?action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=At%20Wa" title="">Hong Kong Leader, Carrie Lam, Gets Jeered, Tainting Annual Address</a></h4>
                                                                     </div><!-- end meta -->
                                                                 </div><!-- end blog-box -->
                                                             </div>
@@ -416,9 +465,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="tech-category-01.html">Local</a>
-                            </li>                   
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link" href="tech-category-01.html">Local</a> -->
+                            <!-- </li>                    -->
                             <li class="nav-item">
                                 <a class="nav-link" href="tech-contact.html">Contact Us</a>
                             </li>
@@ -448,11 +497,11 @@
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title="">Sports</a></span>
-                                        <h4><a href="tech-single.html" title="">WPIAL Week 7 Friday night high school football scoreboard</a></h4>
+                                        <span class="bg-orange">Sports</span>
+                                        <h4><a href="https://www.post-gazette.com/sports/high-school-football/2019/10/11/WPIAL-Week-7-high-school-football-scoreboard-1/stories/201910110149" title="">WPIAL Week 7 Friday night high school football scoreboard</a></h4>
                                         <!-- https://www.post-gazette.com/sports/high-school-football/2019/10/11/WPIAL-Week-7-high-school-football-scoreboard-1/stories/201910110149 -->
                                         <!-- <small><a href="tech-single.html" title="">24 July, 2017</a></small> -->
-                                        <small><a href="tech-author.html" title="">by Michael M. Santiago</a></small>
+                                        <small>by Michael M. Santiago</small>
                                     </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                             </div><!-- end shadow -->
@@ -465,11 +514,11 @@
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title="">Politics</a></span>
-                                        <h4><a href="tech-single.html" title="">Rudy Giuliani said to be under investigation for Ukraine work</a></h4>
+                                        <span class="bg-orange">Politics</span>
+                                        <h4><a href="https://www.post-gazette.com/news/politics-nation/2019/10/11/Rudy-Giuliani-investigation-ukraine-trump-yovanovitch/stories/201910110160" title="">Rudy Giuliani said to be under investigation for Ukraine work</a></h4>
                                         <!-- https://www.post-gazette.com/news/politics-nation/2019/10/11/Rudy-Giuliani-investigation-ukraine-trump-yovanovitch/stories/201910110160 -->
                                         <!-- <small><a href="tech-single.html" title="">03 July, 2017</a></small> -->
-                                        <small><a href="tech-author.html" title="">by Al Drago</a></small>
+                                        <small>by Al Drago</small>
                                     </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                              </div><!-- end shadow -->
@@ -482,11 +531,11 @@
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title="">Local</a></span>
-                                        <h4><a href="tech-single.html" title="">Columbus Day parade is on, despite false advertising to the contrary</a></h4>
+                                        <span class="bg-orange">Local</span>
+                                        <h4><a href="https://www.post-gazette.com/local/city/2019/10/11/Columbus-Day-parade-pittsburgh-bloomfield-false-advertising-posters-not-canceled/stories/201910110159" title="">Columbus Day parade is on, despite false advertising to the contrary</a></h4>
                                         <!-- https://www.post-gazette.com/local/city/2019/10/11/Columbus-Day-parade-pittsburgh-bloomfield-false-advertising-posters-not-canceled/stories/201910110159 -->
                                         <!-- <small><a href="tech-single.html" title="">01 July, 2017</a></small> -->
-                                        <small><a href="tech-author.html" title="">by Andrew Goldstein</a></small>
+                                        <small>by Andrew Goldstein</small>
                                     </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                              </div><!-- end shadow -->
@@ -509,7 +558,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.post-gazette.com/ae/music/2019/10/11/Review-Pittsburgh-Symphony-Orchestra-concert-Beethoven-Sibelius-Schubert-Goerne/stories/201910110161" title="">
                                                 <img src="news/local01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -517,9 +566,9 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Pittsburgh Symphony musicians help raise thousands for local nonprofits, deliver bombastic Beethoven Friday</a></h4>
+                                        <h4><a href="https://www.post-gazette.com/ae/music/2019/10/11/Review-Pittsburgh-Symphony-Orchestra-concert-Beethoven-Sibelius-Schubert-Goerne/stories/201910110161" title="">Pittsburgh Symphony musicians help raise thousands for local nonprofits, deliver bombastic Beethoven Friday</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Local</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Local</a></small>
                                         <!-- https://www.post-gazette.com/ae/music/2019/10/11/Review-Pittsburgh-Symphony-Orchestra-concert-Beethoven-Sibelius-Schubert-Goerne/stories/201910110161 -->
                                         <small>by JEREMY REYNOLDS</small>
                                         <small><i class="fa fa-eye"></i> 1114</small>
@@ -531,7 +580,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.post-gazette.com/ae/movies/2019/10/11/Jane-Fonda-arrested-DC-during-climate-change-protest/stories/201910110164" title="">
                                                 <img src="news/politics01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -539,9 +588,9 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Jane Fonda is arrested in DC during climate change protest — exactly as she’d planned</a></h4>
+                                        <h4><a href="https://www.post-gazette.com/ae/movies/2019/10/11/Jane-Fonda-arrested-DC-during-climate-change-protest/stories/201910110164" title="">Jane Fonda is arrested in DC during climate change protest — exactly as she’d planned</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Politics</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Politics</a></small>
                                         <!-- https://www.post-gazette.com/ae/movies/2019/10/11/Jane-Fonda-arrested-DC-during-climate-change-protest/stories/201910110164 -->
                                         <small>by DORANY PINEDA</small>
                                         <small><i class="fa fa-eye"></i> 4412</small>
@@ -553,7 +602,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.post-gazette.com/sports/high-school-football/2019/10/11/Whipkey-brothers-spark-No-4-McGuffey-8-0-to-28-14-win-Charleroi-high-school-football-Century-Conference/stories/201910110168" title="">
                                                 <img src="news/sports01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -561,9 +610,9 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Whipkey brothers spark No. 4 McGuffey (8-0) to 28-14 win</a></h4>
+                                        <h4><a href="https://www.post-gazette.com/sports/high-school-football/2019/10/11/Whipkey-brothers-spark-No-4-McGuffey-8-0-to-28-14-win-Charleroi-high-school-football-Century-Conference/stories/201910110168" title="">Whipkey brothers spark No. 4 McGuffey (8-0) to 28-14 win</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Sports</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Sports</a></small>
                                         <!-- https://www.post-gazette.com/sports/high-school-football/2019/10/11/Whipkey-brothers-spark-No-4-McGuffey-8-0-to-28-14-win-Charleroi-high-school-football-Century-Conference/stories/201910110168 -->
                                         <small>by KEITH BARNES</small>
                                         <small><i class="fa fa-eye"></i> 2313</small>
@@ -572,22 +621,10 @@
 
                                 <hr class="invis">
 
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1">
-                                        <div class="banner-spot clearfix">
-                                            <div class="banner-img">
-                                                <img src="upload/banner_02.jpg" alt="" class="img-fluid">
-                                            </div><!-- end banner-img -->
-                                        </div><!-- end banner -->
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-
-                                <hr class="invis">
-
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.nytimes.com/2019/10/16/world/middleeast/turkey-kurds-syria.html" title="">
                                                 <img src="news/world_news01.png" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -595,9 +632,10 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Turkey Urges Kurdish Fighters to Lay Down Their Arms</a></h4>
+                                        <h4><a href="https://www.nytimes.com/2019/10/16/world/middleeast/turkey-kurds-syria.html" title="">Turkey Urges Kurdish Fighters to Lay Down Their Arms</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">World News</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">World News</a></small>
+                                        <!-- https://www.nytimes.com/2019/10/16/world/middleeast/turkey-kurds-syria.html -->
                                         <small>by Ben Hubbard</small>
                                         <small><i class="fa fa-eye"></i> 4441</small>
                                     </div><!-- end meta -->
@@ -608,7 +646,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.nytimes.com/interactive/2019/10/16/technology/game-developers.html" title="">
                                                 <img src="news/technology01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -616,9 +654,10 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Fear, Anxiety and Hope: What It Means to Be a Minority in Gaming</a></h4>
+                                        <h4><a href="https://www.nytimes.com/interactive/2019/10/16/technology/game-developers.html" title="">Fear, Anxiety and Hope: What It Means to Be a Minority in Gaming</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Technology</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Technology</a></small>
+                                        <!-- https://www.nytimes.com/interactive/2019/10/16/technology/game-developers.html -->
                                         <small>by  Mihir Zaveri, Meron Tekie Menghistab, Gray Beltran and Alana Celii</small>
                                         <small><i class="fa fa-eye"></i> 33312</small>
                                     </div><!-- end meta -->
@@ -629,7 +668,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.nytimes.com/2019/10/16/science/virgin-galactic-spacesuit.html" title="">
                                                 <img src="news/science01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -637,9 +676,10 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Virgin Galactic Unveils Jumpsuit for Space Tourists</a></h4>
+                                        <h4><a href="https://www.nytimes.com/2019/10/16/science/virgin-galactic-spacesuit.html" title="">Virgin Galactic Unveils Jumpsuit for Space Tourists</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Science</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Science</a></small>
+                                        <!-- https://www.nytimes.com/2019/10/16/science/virgin-galactic-spacesuit.html -->
                                         <small>by Kenneth Chang</small>
                                         <small><i class="fa fa-eye"></i> 4440</small>
                                     </div><!-- end meta -->
@@ -650,7 +690,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.nytimes.com/2019/10/16/business/-big-tech-europe-antitrust.html" title="">
                                                 <img src="news/technology02.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -658,9 +698,10 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">Europe’s Margrethe Vestager Takes a Rare Step Toward Big Tech</a></h4>
+                                        <h4><a href="https://www.nytimes.com/2019/10/16/business/-big-tech-europe-antitrust.html" title="">Europe’s Margrethe Vestager Takes a Rare Step Toward Big Tech</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Technology</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Technology</a></small>
+                                        <!-- https://www.nytimes.com/2019/10/16/business/-big-tech-europe-antitrust.html -->
                                         <small>by Adam Satariano</small>
                                         <small><i class="fa fa-eye"></i> 4412</small>
                                     </div><!-- end meta -->
@@ -671,7 +712,7 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="https://www.nytimes.com/2019/10/14/science/amelia-earhart-robert-ballard.html" title="">
                                                 <img src="news/science04.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -679,10 +720,11 @@
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="tech-single.html" title="">The Amelia Earhart Mystery Stays Down in the Deep</a></h4>
+                                        <h4><a href="https://www.nytimes.com/2019/10/14/science/amelia-earhart-robert-ballard.html" title="">The Amelia Earhart Mystery Stays Down in the Deep</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Science</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" title="">Science</a></small>
                                         <small>by Julie Cohn</small>
+                                        <!-- https://www.nytimes.com/2019/10/14/science/amelia-earhart-robert-ballard.html -->
                                         <small><i class="fa fa-eye"></i> 44123</small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
