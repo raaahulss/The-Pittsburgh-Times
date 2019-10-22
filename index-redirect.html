@@ -47,62 +47,9 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-    
-    <script type='text/javascript'>
-    $(function(){
-    var overlay = $('<div id="overlay"></div>');
-    overlay.show();
-    overlay.appendTo(document.body);
-    $('.popup').show();
-    $('.close').click(function(){
-    $('.popup').hide();
-    overlay.appendTo(document.body).remove();
-    return false;
-    });
-    $('.x').click(function(){
-    $('.popup').hide();
-    overlay.appendTo(document.body).remove();
-    return false;
-    });
-    });
-    </script>
-
 </head>
 <body>
 
-    <div class='popup'>
-        <div class='cnt223' >
-            <!-- <img src='http://www.developertips.net/demos/popup-dialog/img/x.png' alt='quit' class='x' id='x' /> -->
-            <h2>
-                <center>Privacy Policy</center>
-            </h2>
-            <p>
-                Full privacy policy/short notice/video privacy policy
-            </p>
-
-            <!-- <div class='vidContain'> -->
-                <!-- <div class='vid'> -->
-                    <!-- <video controls> -->
-                        <!-- <source src="video.mp4" type="video/mp4"> -->
-                        <!-- Your browser does not support the video tag. -->
-                    <!-- </video> -->
-                    <center style="height:350px;"><iframe style="height:318px;width:600px" src="https://gallery.moovly.com/embed/e2b109c2-f456-11e9-82bd-06ef0ab4386c?autoplay=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></center>
-                <!-- </div> -->
-            <!-- </div> -->
-
-            <p>
-            <form action='https://raaahulss.github.io/The-Pittsburgh-Times/index-redirect.html' method="GET" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Privacy Policy'); return false; }">
-
-                <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Privacy Policy
-                <br/>
-                <!-- <a href='' class='close'><input type="submit" name="submit" value="Submit" /></a> -->
-                <input type="submit" name="submit" value="Submit" />
-
-            </form>
-            </p>
-        </div>
-    </div>
 
     <div id="wrapper">
         <header class="tech-header header">
