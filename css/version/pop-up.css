@@ -26,6 +26,7 @@ z-index: 101;
 min-width: 50%;
 width: 50%;
 min-height: 50%;
+height: 50%;
 margin: 100px auto;
 background: #f3f3f3;
 position: relative;
@@ -45,7 +46,8 @@ font-weight: bold;
 }
 .cnt223 .x{
 float: right;
-height: 35px;
+/*height: 35px;*/
+height: 50%;
 left: 22px;
 position: relative;
 top: -25px;
@@ -54,6 +56,3 @@ width: 34px;
 .cnt223 .x:hover{
 cursor: pointer;
 }
-.vid {
-width:21%; height:14%;
-}    
